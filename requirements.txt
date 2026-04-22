@@ -1,0 +1,81 @@
+# =============================================================================
+# requirements.txt
+# AI-Based Phishing & Email Security — Regulatory Graph Automation Artefact
+# Enterprise Security Management (7CS085) · 2026
+# =============================================================================
+#
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# Create a virtual environment first (recommended):
+#   python -m venv venv
+#   source venv/bin/activate     # Linux / macOS
+#   venv\Scripts\activate        # Windows
+#
+# Google Colab: dependencies are installed automatically by the first cell.
+# =============================================================================
+
+
+# ── CORE GRAPH VISUALISATION ─────────────────────────────────────────────────
+# Interactive, touch-responsive graph widget for Jupyter / Colab
+# Provides drag, zoom, pan, click-to-inspect, and search bar
+yfiles_jupyter_graphs>=1.6.0
+
+
+# ── GRAPH ANALYTICS ──────────────────────────────────────────────────────────
+# Used for degree centrality calculation, subgraph construction,
+# and shortest-path / connectivity analysis
+networkx>=3.0
+
+
+# ── YAML SERIALISATION ───────────────────────────────────────────────────────
+# Artefact export: compliance_checker.yaml, risk_register.yaml,
+# hitl_workflow.yaml, dpia_template.yaml
+PyYAML>=6.0
+
+
+# ── DATA VISUALISATION ───────────────────────────────────────────────────────
+# Static compliance bar chart and degree-centrality plot (Step 6)
+matplotlib>=3.7.0
+
+
+# ── JUPYTER WIDGET INFRASTRUCTURE ────────────────────────────────────────────
+# Required for yfiles_jupyter_graphs to render in Jupyter Notebook / Lab
+# (Google Colab uses output.enable_custom_widget_manager() instead)
+ipywidgets>=8.0.0
+
+
+# ── JUPYTER ENVIRONMENT ──────────────────────────────────────────────────────
+# Core Jupyter packages — only needed for local installs.
+# Already present in Colab and most conda environments.
+jupyter>=1.0.0
+notebook>=6.5.0
+
+
+# =============================================================================
+# OPTIONAL — enhanced local development experience
+# =============================================================================
+
+# JupyterLab (modern UI, recommended over classic Notebook)
+# jupyterlab>=4.0.0
+
+# JupyterLab widget extension (required if using JupyterLab instead of Notebook)
+# jupyterlab_widgets>=3.0.0
+
+# JSON export validation
+# jsonschema>=4.17.0
+
+# Graph export to Gephi / Neo4j formats (optional)
+# networkx[default]>=3.0      # includes scipy for layout algorithms
+
+# Interactive progress bars during graph construction (optional)
+# tqdm>=4.65.0
+
+
+# =============================================================================
+# PYTHON VERSION COMPATIBILITY
+# =============================================================================
+# Python >= 3.8 required
+# Tested on: 3.8, 3.9, 3.10, 3.11, 3.12
+# Google Colab default: Python 3.10
+# =============================================================================
