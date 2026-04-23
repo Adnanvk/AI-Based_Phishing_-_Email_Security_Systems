@@ -1,7 +1,7 @@
 # 🛡️ AI-Based Phishing & Email Security — Regulatory Graph Automation Artefact
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-> **Interactive, touch-responsive knowledge graph** mapping the full regulatory obligations, risks, stakeholders, and automation artefacts for an AI-based phishing & email security system (Microsoft Defender for Office 365) deployed in a representative NHS/Corporate UK environment.
+> **Touch-sensitive knowledge map** covering all regulatory requirements, risk factors, stakeholders, and artefacts of automation for the AI-powered phishing & email security solution (Microsoft Defender for Office 365) that operates within a sample NHS/Corporate UK setting.
 
 **Module:** Enterprise Security Management (7CS085) · 2026  
 **System under analysis:** Microsoft Defender for Office 365 — NHS/Corporate UK Deployment  
