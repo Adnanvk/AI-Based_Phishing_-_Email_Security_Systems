@@ -173,18 +173,6 @@ jupyter notebook AI_Phishing_Regulatory_Graph_Artefact.ipynb
 
 ---
 
-## ☁️ Running in Google Colab
-
-The notebook is fully configured for Colab. Cell 1 automatically:
-- Installs `yfiles_jupyter_graphs`, `networkx`, `pyyaml`, `matplotlib`
-- Enables the custom widget manager required for interactive graphs in Colab
-- Detects the environment and prints confirmation
-
-**No API keys, credentials, or local files required.**
-
-> ⚠️ If the graph widget appears blank in Colab, go to **Runtime → Restart and run all**. This is a known widget initialisation quirk in some Colab environments.
-
----
 
 ## 💻 Running Locally
 
@@ -202,34 +190,9 @@ The notebook is fully configured for Colab. Cell 1 automatically:
 | Jupyter Notebook 6.x | ✅ Supported |
 | VS Code (Jupyter extension) | ✅ Supported |
 
-### Widget Support Note
-
-`yfiles_jupyter_graphs` requires the Jupyter widget infrastructure. If widgets do not render:
-
-```bash
-# For JupyterLab
-pip install jupyterlab_widgets
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
-
-# For classic Notebook
-pip install ipywidgets
-jupyter nbextension enable --py widgetsnbextension
-```
-
 ---
 
-## 📓 Notebook Structure
 
-| Step | Cell | Description |
-|------|------|-------------|
-| **Step 1** | Setup | Install packages, enable Colab widget manager |
-| **Step 2** | Nodes & Edges | Define all 50 nodes and 84 edges with full descriptions |
-| **Step 3** | Colour & Style | `build_graph()` helper with category-based colour mapping |
-| **Step 4** | Full Graph | Complete interactive graph — all layers and relationships |
-| **Step 5** | Subgraphs | 6 themed subgraphs (risks, GDPR, EU AI Act, stakeholders, etc.) |
-| **Step 6** | Analytics | NetworkX degree centrality, matplotlib compliance bar chart |
-| **Step 7** | Artefact Content | Full YAML output for all 4 automation artefacts |
-| **Step 8** | Export | Writes YAML/JSON/PNG files; auto-downloads in Colab |
 
 ### Subgraphs Available (Step 5)
 
