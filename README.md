@@ -1,10 +1,6 @@
 # 🛡️ AI-Based Phishing & Email Security — Regulatory Graph Automation Artefact
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/AI_Phishing_Regulatory_Graph_Artefact.ipynb)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
 > **Interactive, touch-responsive knowledge graph** mapping the full regulatory obligations, risks, stakeholders, and automation artefacts for an AI-based phishing & email security system (Microsoft Defender for Office 365) deployed in a representative NHS/Corporate UK environment.
 
 **Module:** Enterprise Security Management (7CS085) · 2026  
@@ -160,7 +156,7 @@ Structured Data Protection Impact Assessment template for AI email security depl
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git clone (https://github.com/Adnanvk/AI-Based_Phishing_-_Email_Security_Systems)
 cd YOUR_REPO
 
 # 2. Create a virtual environment (recommended)
