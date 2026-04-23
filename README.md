@@ -47,15 +47,15 @@ The graph makes this argument visible by connecting:
 
 | Layer | Node Count | Description |
 |-------|-----------|-------------|
-| 🖥️ **AI System** | 1 | Microsoft Defender for Office 365 (centre node) |
-| 🔵 **EU AI Act** | 12 | Art. 9, 10, 11, 12, 13, 14, 15, 16, 50, 51 + Annex III |
-| 🔴 **UK GDPR / DPA 2018** | 5 | Art. 5, 6, 15, 22, 35 + IPA 2016 |
-| 🟠 **UK AI White Paper 2023** | 5 | Five cross-sector principles |
-| 🟣 **NIS Regulations / NIS2** | 3 | Essential service obligations + NCSC ACD |
-| ⚖️ **Equality Act 2010** | 1 | Indirect discrimination via algorithmic bias |
-| 🟡 **Risk Register** | 7 | R-01 through R-07 |
-| 🟢 **Stakeholders** | 6 | Vendor, IT Security, Employees, DPO, Executive, Regulators |
-| 🩷 **Automation Artefacts** | 5 | Compliance Checker, DPIA, HITL Workflow, Risk Matrix, Bias Audit |
+|  **AI System** | 1 | Microsoft Defender for Office 365 (centre node) |
+|  **EU AI Act** | 12 | Art. 9, 10, 11, 12, 13, 14, 15, 16, 50, 51 + Annex III |
+|  **UK GDPR / DPA 2018** | 5 | Art. 5, 6, 15, 22, 35 + IPA 2016 |
+|  **UK AI White Paper 2023** | 5 | Five cross-sector principles |
+|  **NIS Regulations / NIS2** | 3 | Essential service obligations + NCSC ACD |
+|  **Equality Act 2010** | 1 | Indirect discrimination via algorithmic bias |
+|  **Risk Register** | 7 | R-01 through R-07 |
+|  **Stakeholders** | 6 | Vendor, IT Security, Employees, DPO, Executive, Regulators |
+|  **Automation Artefacts** | 5 | Compliance Checker, DPIA, HITL Workflow, Risk Matrix, Bias Audit |
 | **Total nodes** | **~50** | |
 | **Total edges** | **84** | REQUIRES, SUBJECT_TO, VIOLATES, IMPLEMENTS, MITIGATES, ALIGNS_WITH… |
 
@@ -75,9 +75,9 @@ The graph makes this argument visible by connecting:
 
 ---
 
-## ⚖️ Regulatory Layers
+##  Regulatory Layers
 
-### 🔵 EU AI Act (Regulation 2024/1689)
+###  EU AI Act (Regulation 2024/1689)
 
 The graph argues that Microsoft Defender for Office 365 in NHS deployments meets **Annex III High-Risk** criteria across two categories:
 
@@ -88,7 +88,7 @@ Currently misclassified as **Limited Risk** (transparency obligations only).
 
 Key articles modelled: Art. 9 (Risk Mgmt), Art. 10 (Data Governance), Art. 11 (Technical Docs), Art. 12 (Record Keeping), Art. 13 (Transparency), Art. 14 (Human Oversight), Art. 15 (Accuracy & Cybersecurity), Art. 16 (Provider Obligations), Art. 50 (User Notification), Art. 51 (Registration).
 
-### 🔴 UK GDPR / DPA 2018
+###  UK GDPR / DPA 2018
 
 | Article | Issue |
 |---------|-------|
@@ -98,17 +98,17 @@ Key articles modelled: Art. 9 (Risk Mgmt), Art. 10 (Data Governance), Art. 11 (T
 | **Art. 6(1)(f)** | Legitimate interest balancing exercise required but rarely completed |
 | **Art. 5** | Data principles — M1 module scored 33.3% |
 
-### 🟣 NIS Regulations 2018 / NIS2
+###  NIS Regulations 2018 / NIS2
 
 NHS Trusts and financial operators of essential services must take appropriate and proportionate security measures. NIS2 significantly raises supply chain AI assurance requirements — vendor model refresh cadence must be documented in procurement contracts.
 
-### ⚖️ Equality Act 2010
+###  Equality Act 2010
 
 NLP models trained on Western English corpora produce higher false positive rates for non-native English speakers — R-04 (Algorithmic Bias) rated **MEDIUM** risk with potential Equality Act s.19 (indirect discrimination) exposure.
 
 ---
 
-## 🤖 Automation Artefacts
+##  Automation Artefacts
 
 Four structured artefacts are generated and exported by the notebook:
 
@@ -117,23 +117,23 @@ Four structured artefacts are generated and exported by the notebook:
 
 | Module | Regulatory Basis | Questions | NHS Score | Status |
 |--------|-----------------|-----------|-----------|--------|
-| M1 — GDPR Lawful Basis | UK GDPR Art. 5, 6, 13 | 6 | 33.3% | ⚠️ Non-Compliant |
-| M2 — Article 22 Compliance | UK GDPR Art. 22; ICO 2024 | 8 | 21.3% | 🔴 Non-Compliant |
-| M3 — DPIA Completion | UK GDPR Art. 35; ICO DPIA | 5 | **0.0%** | 🚨 Critical |
-| M4 — EU AI Act Transparency | EU AI Act Art. 50; UK WP Prin. 3 | 5 | 40.0% | ⚠️ Non-Compliant |
-| M5 — NIS / Human Oversight | NIS Regs 2018; AI Act Art. 14 | 6 | 35.7% | ⚠️ Non-Compliant |
+| M1 — GDPR Lawful Basis | UK GDPR Art. 5, 6, 13 | 6 | 33.3% |  Non-Compliant |
+| M2 — Article 22 Compliance | UK GDPR Art. 22; ICO 2024 | 8 | 21.3% |  Non-Compliant |
+| M3 — DPIA Completion | UK GDPR Art. 35; ICO DPIA | 5 | **0.0%** |  Critical |
+| M4 — EU AI Act Transparency | EU AI Act Art. 50; UK WP Prin. 3 | 5 | 40.0% |  Non-Compliant |
+| M5 — NIS / Human Oversight | NIS Regs 2018; AI Act Art. 14 | 6 | 35.7% |  Non-Compliant |
 
 ### 2. Risk Register (R-01 to R-07)
 
 | ID | Description | Risk Level | Regulatory Exposure |
 |----|-------------|------------|---------------------|
-| R-01 | False Negative — ransomware infection | 🔴 HIGH | NIS Regs; NHS DSPT; CQC |
-| R-02 | False Positive — patient safety | 🔴 HIGH | UK GDPR Art. 22; CQC |
-| R-03 | Art. 22 non-compliance | 🔴 HIGH | ICO enforcement; 4% turnover |
-| R-04 | Algorithmic bias — indirect discrimination | 🟠 MEDIUM | Equality Act 2010; ICO |
-| R-05 | Automation bias — analyst over-reliance | 🟡 MED-HIGH | NIS Regs; Art. 14 |
-| R-06 | Adversarial ML evasion | 🟠 MEDIUM | NIS Regs; NIS2 supply chain |
-| R-07 | DPIA absent | 🟡 MED-HIGH | ICO; UK GDPR Art. 35 |
+| R-01 | False Negative — ransomware infection |  HIGH | NIS Regs; NHS DSPT; CQC |
+| R-02 | False Positive — patient safety |  HIGH | UK GDPR Art. 22; CQC |
+| R-03 | Art. 22 non-compliance |  HIGH | ICO enforcement; 4% turnover |
+| R-04 | Algorithmic bias — indirect discrimination |  MEDIUM | Equality Act 2010; ICO |
+| R-05 | Automation bias — analyst over-reliance |  MED-HIGH | NIS Regs; Art. 14 |
+| R-06 | Adversarial ML evasion |  MEDIUM | NIS Regs; NIS2 supply chain |
+| R-07 | DPIA absent |  MED-HIGH | ICO; UK GDPR Art. 35 |
 
 ### 3. HITL Workflow (Human-in-the-Loop)
 Implements EU AI Act Art. 14 + UK GDPR Art. 22 safeguards. Routes ambiguous-zone cases (confidence 35–75%) to mandatory human review with SHAP feature attribution before verdict is accepted.
