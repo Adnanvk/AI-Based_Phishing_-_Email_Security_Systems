@@ -33,7 +33,7 @@ This notebook produces an **interactive relational graph database** of the regul
 
 The central argument motivating the graph:
 
-> *AI phishing detection systems occupy a regulatory grey zone — consequential enough to warrant high-risk designation under the EU AI Act, yet routinely deployed without the transparency, oversight, and accountability mechanisms such designation requires.*
+> *Phishing detection systems that utilize artificial intelligence operate within a legal grey area. These systems are of great consequence and need to be classified as high-risk entities within the AI Act, yet they are regularly used without adequate oversight.*
 
 The graph makes this argument visible by connecting:
 - **Laws → Articles → Risks** (which articles each risk violates)
