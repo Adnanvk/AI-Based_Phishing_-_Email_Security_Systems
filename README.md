@@ -280,16 +280,6 @@ Running Step 8 generates the following files (auto-downloaded in Colab):
 ├── AI_Phishing_Regulatory_Graph_Artefact.ipynb   # Main notebook
 ├── README.md                                       # This file
 ├── requirements.txt                                # Python dependencies
-├── exports/                                        # Pre-generated artefact exports
-│   ├── compliance_checker.yaml
-│   ├── risk_register.yaml
-│   ├── hitl_workflow.yaml
-│   ├── dpia_template.yaml
-│   ├── regulatory_graph.json
-│   └── compliance_analysis.png
-└── docs/
-    └── regulatory_summary.md                       # Plain-text regulatory reference
-```
 
 ---
 
