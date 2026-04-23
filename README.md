@@ -258,18 +258,6 @@ The graph makes five structural findings visible:
 
 ---
 
-## 💾 Exported Files
-
-Running Step 8 generates the following files (auto-downloaded in Colab):
-
-| File | Format | Description |
-|------|--------|-------------|
-| `compliance_checker.yaml` | YAML | Full 5-module compliance checker with NHS Trust scores and remediation list |
-| `risk_register.yaml` | YAML | All 7 risks (R-01 to R-07) with mitigations, owners, and review schedules |
-| `hitl_workflow.yaml` | YAML | Human-in-the-Loop review workflow (Art. 14 + Art. 22 safeguards) |
-| `dpia_template.yaml` | YAML | DPIA template pre-populated for AI email security deployments |
-| `regulatory_graph.json` | JSON | Full graph (nodes + edges) for import into Neo4j, Gephi, or D3.js |
-| `compliance_analysis.png` | PNG | Static matplotlib bar chart of compliance scores and degree centrality |
 
 ---
 
